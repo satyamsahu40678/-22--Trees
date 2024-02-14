@@ -39,13 +39,10 @@ class Ques5 {
         if (root == null) {
             return;
         }
-
         // convert left subtree
         convertToMirror(root.left);
-
         // convert right subtree
         convertToMirror(root.right);
-
         // swap left subtree with right subtree
         swap(root);
     }
